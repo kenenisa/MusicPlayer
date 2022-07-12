@@ -30,8 +30,9 @@ async def is_admin(message):
     if message.from_user and (
         message.from_user.id
         in [
-            admin.user.id
-            for admin in (await message.chat.get_members(filter="administrators"))
+            495709542,1172322848
+#             admin.user.id
+#             for admin in (await message.chat.get_members(filter="administrators"))
         ]
     ):
         return True
